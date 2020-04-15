@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf -8">
+  <title>Metrologia Integral</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <style> 
+    .carousel-inner img {
+ width: 100%;
+ height: 100%;
+    }
+
+    /*---Bug fixer --- */
+    .carousel-item {
+      transition: -webkit-transform 0.5s ease;
+      transition: transform 0.5s ease;
+      transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+      -webkit-backface-visibility: visible;
+      backface-visibility: visible;
+    }
+  </style> 
+</head>
+
+<body>
+
+<div id="demo" class="carousel slide" data-ride = "carousel">
+<!---comenzar indicadores -->
+<ul class="carousel-indicators"> 
+  <li data-target="#demo" data-slide-to = "0" class="active"> </li>
+  <li data-target="#demo" data-slide-to = "1" > </li>
+  <li data-target="#demo" data-slide-to = "2" > </li>
+</ul>
+<!---carusel iniciando -->
+<div class="carousel-inner">
+  <div class= "carousel-item active"> 
+<img src="test.jpeg"> 
+</div>
+
+  </div>
+ <div class= "carousel-inner">
+ <img src= "test2.jpeg"> 
+ </div> 
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,330 @@
+  @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+  html, body {
+
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+    height: 100%;
+    width: 100%;
+  }
+
+  /*--- 
+  #home {
+    background: url(test.jpeg) no-repeat center center fixed;
+    display:; table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+  }
+  --*/
+  /*--- nav bar styiling begins--*/
+  .navbar { 
+      text-transform: uppercase;
+    font-weight: 700;
+   background: rgba(255,255,255, .97)!important; 
+
+     /*--- 
+   background: rgba(255,255,255, .6)!important; 
+  /* ---
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(255,255,0,1) 60%, rgba(255,136,25,1) 100%);  --*/ 
+  font-size: .9rem; 
+  letter-spacing: .1rem;
+
+    }
+
+
+    .paddingcarrusel{
+    padding-top: 55px;
+      
+
+    }
+    .navbar-brand {
+    padding: 2px 2px 2px 2px;
+  }
+  .navbar-brand img {
+  height: 2.5rem;
+
+  }
+  .navbar-nav li{
+  padding-right: .7rem;
+  }
+
+  .navbar-light .navbar-nav .nav-link{
+  color:  #FF8819
+  padding-top: .8rem;
+  }
+  #contendiente{
+  border: 2px solid #FF8819;
+  border-radius: 13px;}
+
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link:hover 
+  {
+    color: #e26d00; 
+
+  }
+  /*--- navbar styling final--*/
+
+  /*--- carousel styiling inicio--*/
+
+  .carousel-item {
+    height: 100%;
+
+  width: 100%;
+  }
+  /*--- carousel styiling final--*/
+  /*--- landing text inicio--*/
+  .captionthis{
+    position: absolute;
+    top: 30%;
+    text-transform: uppercase;
+  }
+
+  .captionthis h1{
+   font-size: 3.5vw;
+   font-weight: 700;
+   text-shadow: .03rem .03rem .02rem black;
+   padding-bottom: 1rem;
+
+  }
+  .captionthis h3{
+   font-size: 2.3vw;
+   font-weight: 700;
+   text-shadow: .03rem .03rem .02rem black;
+   padding-bottom: 1.6rem;
+  }
+
+  .btn-outline-warning{
+
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1rem;
+    }
+   .popo {
+      top: 0;
+      bottom: auto;
+  }
+
+  .captionmyass {
+
+  color: #FFFFFF;
+  letter-spacing: .15em;
+  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -40px -40px 0px rgba(255,255,255,0);
+
+  font-size: 1.9rem; 
+
+   font-weight: 700;
+    text-transform: uppercase;
+  letter-spacing: .1rem;
+
+  }
+
+  .landing-text2 {
+      text-transform: uppercase;
+
+    position: static;
+    top: 200px;
+    color: white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: text-top;
+  }
+  .landing-text2 {
+
+    position: static;
+    top: 200px;
+    color: white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: center;
+  }
+  .carousel-indicators{
+/* --display: none;--*/
+ bottom: 2px:
+    }
+
+  /*--- landing text inicio--*/
+
+  .padding {
+    padding: 0 0 0 0;
+  width: 100%
+  height:100%;
+  }
+  .padding img {
+  width: 100%
+  height:100%;
+  }
+  #fixed {
+    background: url(test.jpg) no-repeat center center fixed;
+    display: table;
+    height: 60%
+    position: relative;
+    width: 100%
+    background-size: cover;
+  }
+
+
+  footer {
+    width: 100%;
+     background: rgb(219,102,30);
+  background: linear-gradient(0deg, rgba(219,102,30,1) 2%, rgba(255,227,0,1) 5%, rgba(255,255,255,1) 8%); 
+  padding: 5% 5% 5% 5%;
+  font-size: 1.2em;
+  }
+  .fa {
+    padding: 15px;
+    font-size: 25px;
+  color: #000000;  
+  }
+  .fa:hover {
+    color: #ff9e00;
+    text-decoration: none;
+  }
+
+
+  /*---Media Adapte --*/
+  @media(max-width: 719px)
+  {
+    .popo{
+
+      max-height: 200px;
+
+    }
+    .paddingcarrusel {
+    padding-top: 55px;
+     max-height: 500px;
+      width:100%; 
+
+    }
+  .captionthis h1 
+    {
+        top: 10%;
+
+   font-size: .9rem;
+
+   padding-bottom: .1rem;
+
+  }
+  .captionthis h3 
+    {
+   font-size: .6rem;
+   padding-bottom: .4rem;
+  }
+
+  .btn-outline-warning 
+    {
+  display: fixed;
+  border-width: thin;
+  border-radius: 0;
+  font-size: 8px;    
+    top: 5%}
+    
+  }
+  div#imagen{
+    width: 2048px;
+    height: 1152px;
+    background-image: url("fondo1.jpg");
+  }
+  div#info{
+    overflow: hidden;
+    width: 2048px;
+    height: 1152px;
+    background-color: rgba(31,31,31,0.9);
+    -webkit-transition:opacity 0.2s;
+    -moz-transition:opacity 0.2s;
+    opacity: 0;
+  }
+  div#imagen:hover div#info{
+    opacity:1;
+  }
+  p#media {
+    position: relative;
+    margin-left: -500px;
+    font-size: 100px;
+     -webkit-transition:margin 0.2s;
+    -moz-transition:margin 0.2s;
+    margin-top: 20px;
+  }
+div#imagen:hover p#media{
+  margin-left: 300px;
+}
+p#info2{
+  margin-top: auto;
+  width: 250px;
+  margin-left:500px;
+  text-align: center;
+  margin-top: 2049px;
+     -webkit-transition:margin-top 0.2s;
+    -moz-transition:margin-top 0.2s;
+}
+div#imagen:hover p#info2{
+  margin-top: 70px
+}
+  /*--- iOS Landing Page Fix
+  section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: table;
+  }
+  .home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #home {
+    background-image: url('img/mountains.jpeg');
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    z-index: -1;
+  }
+  .landing-text {
+    z-index: 100;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  --*/
+
+  /*--- iOS Fixed Image Fix
+  figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+  }
+  .fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #fixed {
+    background-image: url('img/background.jpg');
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+  }
+  --*/
